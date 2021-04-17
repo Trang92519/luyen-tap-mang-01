@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number=[2,4,10,14,5,15,20,8,9,1];
+    let max =number[0];
+    let sum =max;
+    let avg=0;
+
+    for ( let i=1; i<number.length; i++){
+        if (max < number[i]){
+            max= number[i];
+            sum +=number[i];
+        }
+        avg = sum/ number.length;
+    }
+    document.write("gia tri lon nhat la:" + max + '<br>'+" gia tri tb la:" + avg);
+</script>
+
+</body>
+</html>

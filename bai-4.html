@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input type="text" id="ip"/>-->
+<!--<button type="button" onclick="reverse()"> Reverse</button>-->
+<!--<p id=" result"></p>-->
+
+<script>
+    //function reverse() {
+
+        let num = [2, 5, 3, 9, 10];
+       // let numNew = [];
+
+        //let a = document.getElementById('ip').value;
+        // for (let i = 0; i < num.length; i++) {
+        //     let temp = num[0];
+        //     num[0] = num[num.length - 1];
+        //     num[num.length - 1] = temp;
+        //     num.reverse().join();
+        //     numNew.push('a');
+        // }
+
+        let first = 0;
+        let last = num.length - 1;
+        while (first < last) {
+            let b = num[first];
+            num[first] = num[last];
+            num[last] = b;
+            first++;
+            last--;
+           // numNew.push('a');
+           // document.getElementById(' result').innerHTML = numNew['a'];
+        }
+        document.write(num);
+
+</script>
+</body>
+</html>

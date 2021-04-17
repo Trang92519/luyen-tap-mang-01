@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<input type="number" id="ip"/>-->
+<!--<button type="button" onclick="button()">Check</button>-->
+<!--<p id="result"></p>-->
+
+<script>
+    // function button() {
+    let number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    //let a =+ document.getElementById('ip').value;
+    let a = +prompt('nhap so');
+
+    for (let i = 0; i < number.length; i++) {
+        if (a === number[i]) {
+            number.splice(number[i], 1);
+            //document.getElementById('result').innerHTML = a + 'is in the array';
+            alert(a + 'is in the array' + number);
+            break;
+        } else {
+//document.getElementById('result').innerHTML = a + 'is not in the array';
+            alert(a + 'not is in the array');
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>
